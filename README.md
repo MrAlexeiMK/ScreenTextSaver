@@ -2,6 +2,8 @@
 
 Minecraft 1.21.8 Fabric mod.
 
+<b><a href="https://www.youtube.com/watch?v=8wabFK2-F6E">DEMONSTRATION</a></b>  
+
 ## Build
 
 `./gradlew build`
