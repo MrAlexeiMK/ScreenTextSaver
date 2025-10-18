@@ -1,6 +1,5 @@
 plugins {
     id 'fabric-loom' version '1.11-SNAPSHOT'
-    id 'maven-publish'
     id 'com.google.protobuf' version '0.9.5'
 }
 
@@ -43,7 +42,7 @@ dependencies {
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-rendering-v1:${project.fabric_rendering_version}"
+    // Cloth
     modApi "me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}"
     // Protobuf
     implementation "com.google.protobuf:protobuf-java:${project.protobuf_version}"
