@@ -1,0 +1,8 @@
+syntax = "proto3";
+package ru.iot.screentextsaver;
+
+option java_outer_classname = "MessageProto";
+
+message Message {
+  string text = 1;
+}

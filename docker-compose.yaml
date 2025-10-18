@@ -1,0 +1,17 @@
+# Docker Compose configuration for development purposes.
+services:
+  database:
+    image: postgres:17.4
+    ports:
+      - '15432:5432'
+    environment:
+      - POSTGRES_DB=screen_text_saver
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      # Named volume to persist data between container restarts.
+      - database-data:/var/lib/postgresql/data
+      # Mount directory with initialization scripts.
+      - ./docker/init:/docker-entrypoint-initdb.d
+volumes:
+  database-data:
